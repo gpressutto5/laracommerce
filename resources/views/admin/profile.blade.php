@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'AdminLTE')
+@section('title', 'Profile')
 
 @section('content_header')
     <h1>@lang('menu.profile')</h1>

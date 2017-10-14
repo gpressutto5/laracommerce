@@ -124,7 +124,7 @@ return [
         ],
         'categories' => [
             'text'        => 'menu.categories',
-            'url'         => 'admin/category',
+            'url'         => 'admin/categories',
             'icon'        => 'tags',
         ],
 
