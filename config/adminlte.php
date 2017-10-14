@@ -108,6 +108,7 @@ return [
     */
 
     'menu' => [
+        // MAIN NAVIGATION
         'main' => [
             'header' => 'menu.main',
         ],
@@ -116,6 +117,18 @@ return [
             'url'         => 'admin',
             'icon'        => 'dashboard',
         ],
+
+        // SHOP SETTINGS
+        'shop' => [
+            'header' => 'menu.shop',
+        ],
+        'categories' => [
+            'text'        => 'menu.categories',
+            'url'         => 'admin/category',
+            'icon'        => 'tags',
+        ],
+
+        // ACCOUNT SETTINGS
         'account' => [
             'header' => 'menu.account',
         ],
