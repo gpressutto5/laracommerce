@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Database\Seeder;
 use TCG\Voyager\Models\Page;
+use Illuminate\Database\Seeder;
 
 class PagesTableSeeder extends Seeder
 {
@@ -15,7 +15,7 @@ class PagesTableSeeder extends Seeder
         $page = Page::firstOrNew([
             'slug' => 'hello-world',
         ]);
-        if (!$page->exists) {
+        if (! $page->exists) {
             $page->fill([
                 'author_id' => 0,
                 'title'     => 'Hello World',

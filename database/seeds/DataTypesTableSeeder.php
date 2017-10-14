@@ -11,7 +11,7 @@ class DataTypesTableSeeder extends Seeder
     public function run()
     {
         $dataType = $this->dataType('slug', 'posts');
-        if (!$dataType->exists) {
+        if (! $dataType->exists) {
             $dataType->fill([
                 'name'                  => 'posts',
                 'display_name_singular' => 'Post',
@@ -26,7 +26,7 @@ class DataTypesTableSeeder extends Seeder
         }
 
         $dataType = $this->dataType('slug', 'pages');
-        if (!$dataType->exists) {
+        if (! $dataType->exists) {
             $dataType->fill([
                 'name'                  => 'pages',
                 'display_name_singular' => 'Page',
@@ -40,7 +40,7 @@ class DataTypesTableSeeder extends Seeder
         }
 
         $dataType = $this->dataType('slug', 'users');
-        if (!$dataType->exists) {
+        if (! $dataType->exists) {
             $dataType->fill([
                 'name'                  => 'users',
                 'display_name_singular' => 'User',
@@ -55,7 +55,7 @@ class DataTypesTableSeeder extends Seeder
         }
 
         $dataType = $this->dataType('name', 'categories');
-        if (!$dataType->exists) {
+        if (! $dataType->exists) {
             $dataType->fill([
                 'slug'                  => 'categories',
                 'display_name_singular' => 'Category',
@@ -69,7 +69,7 @@ class DataTypesTableSeeder extends Seeder
         }
 
         $dataType = $this->dataType('slug', 'menus');
-        if (!$dataType->exists) {
+        if (! $dataType->exists) {
             $dataType->fill([
                 'name'                  => 'menus',
                 'display_name_singular' => 'Menu',
@@ -83,7 +83,7 @@ class DataTypesTableSeeder extends Seeder
         }
 
         $dataType = $this->dataType('slug', 'roles');
-        if (!$dataType->exists) {
+        if (! $dataType->exists) {
             $dataType->fill([
                 'name'                  => 'roles',
                 'display_name_singular' => 'Role',

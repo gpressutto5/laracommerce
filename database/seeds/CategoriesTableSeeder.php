@@ -15,7 +15,7 @@ class CategoriesTableSeeder extends Seeder
         $category = Category::firstOrNew([
             'slug' => 'category-1',
         ]);
-        if (!$category->exists) {
+        if (! $category->exists) {
             $category->fill([
                 'name'       => 'Category 1',
             ])->save();
@@ -24,7 +24,7 @@ class CategoriesTableSeeder extends Seeder
         $category = Category::firstOrNew([
             'slug' => 'category-2',
         ]);
-        if (!$category->exists) {
+        if (! $category->exists) {
             $category->fill([
                 'name'       => 'Category 2',
             ])->save();

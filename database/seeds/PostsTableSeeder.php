@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Database\Seeder;
 use TCG\Voyager\Models\Post;
+use Illuminate\Database\Seeder;
 
 class PostsTableSeeder extends Seeder
 {
@@ -11,7 +11,7 @@ class PostsTableSeeder extends Seeder
     public function run()
     {
         $post = $this->findPost('lorem-ipsum-post');
-        if (!$post->exists) {
+        if (! $post->exists) {
             $post->fill([
                 'title'            => 'Lorem Ipsum Post',
                 'author_id'        => 0,
@@ -28,7 +28,7 @@ class PostsTableSeeder extends Seeder
         }
 
         $post = $this->findPost('my-sample-post');
-        if (!$post->exists) {
+        if (! $post->exists) {
             $post->fill([
                 'title'     => 'My Sample Post',
                 'author_id' => 0,
@@ -47,7 +47,7 @@ class PostsTableSeeder extends Seeder
         }
 
         $post = $this->findPost('latest-post');
-        if (!$post->exists) {
+        if (! $post->exists) {
             $post->fill([
                 'title'            => 'Latest Post',
                 'author_id'        => 0,
@@ -64,7 +64,7 @@ class PostsTableSeeder extends Seeder
         }
 
         $post = $this->findPost('yarr-post');
-        if (!$post->exists) {
+        if (! $post->exists) {
             $post->fill([
                 'title'     => 'Yarr Post',
                 'author_id' => 0,
