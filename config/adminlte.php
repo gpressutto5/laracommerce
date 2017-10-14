@@ -108,16 +108,20 @@ return [
     */
 
     'menu' => [
-        'MAIN NAVIGATION',
-        [
-            'text'        => 'Dashboard',
+        'main' => [
+            'header' => 'menu.main'
+        ],
+        'dashboard' => [
+            'text'        => 'menu.dashboard',
             'url'         => 'admin',
             'icon'        => 'dashboard',
         ],
-        'ACCOUNT SETTINGS',
-        [
-            'text' => 'Profile',
-            'url'  => 'admin/settings',
+        'account' => [
+            'header' => 'menu.account'
+        ],
+        'profile' => [
+            'text' => 'menu.profile',
+            'url'  => 'admin/profile',
             'icon' => 'user',
         ],
     ],
@@ -140,6 +144,7 @@ return [
         JeroenNoten\LaravelAdminLte\Menu\Filters\SubmenuFilter::class,
         JeroenNoten\LaravelAdminLte\Menu\Filters\ClassesFilter::class,
         JeroenNoten\LaravelAdminLte\Menu\Filters\GateFilter::class,
+        App\Menu\Filters\LangFilter::class,
     ],
 
     /*
