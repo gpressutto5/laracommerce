@@ -109,7 +109,7 @@ return [
 
     'menu' => [
         'main' => [
-            'header' => 'menu.main'
+            'header' => 'menu.main',
         ],
         'dashboard' => [
             'text'        => 'menu.dashboard',
@@ -117,7 +117,7 @@ return [
             'icon'        => 'dashboard',
         ],
         'account' => [
-            'header' => 'menu.account'
+            'header' => 'menu.account',
         ],
         'profile' => [
             'text' => 'menu.profile',
