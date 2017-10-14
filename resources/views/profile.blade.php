@@ -3,9 +3,9 @@
 @section('title', 'AdminLTE')
 
 @section('content_header')
-    <h1>@lang('menu.dashboard')</h1>
+    <h1>@lang('menu.profile')</h1>
 @stop
 
 @section('content')
-    <p>You are logged in!</p>
+    <p>Edit your profile here!</p>
 @stop
