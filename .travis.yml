@@ -1,0 +1,22 @@
+language: php
+
+dist: trusty
+sudo: required
+
+php:
+  - '7.1'
+
+install:
+  - composer install --no-interaction
+  - cp .env.example .env
+  - php artisan key:generate
+
+script: phpunit
+
+after_script: bash <(curl -s https://codecov.io/bash)
+
+cache:
+  apt: true
+  directories:
+    - $TRAVIS_BUILD_DIR/vendor
+    - $HOME/.composer/cache
