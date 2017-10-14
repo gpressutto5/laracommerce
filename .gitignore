@@ -15,3 +15,7 @@ yarn-error.log
 # PHPUnit files
 /report/
 /clover.xml
+
+# IDE Helper files
+/_ide_helper.php
+/.phpstorm.meta.php
