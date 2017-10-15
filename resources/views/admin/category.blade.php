@@ -11,9 +11,9 @@
         <div class="col-xs-12">
             <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title">Test</h3>
+                    <h3 class="box-title">@lang('admin/category.title')</h3>
                     <div class="box-tools">
-                        <a href="#" class="btn btn-sm btn-success">Add new <i class="fa fa-plus-circle tool-icon"></i></a>
+                        <a href="#" class="btn btn-sm btn-success">@lang('admin/category.new') <i class="fa fa-plus-circle tool-icon"></i></a>
                     </div>
                 </div>
                 <div class="box-body table-responsive no-padding">

@@ -1,10 +1,10 @@
 <table class="table table-hover" id="category-table">
     <thead>
     <tr data-level="header">
-        <th>ID</th>
-        <th>Name</th>
-        <th>Slug</th>
-        <th>Actions</th>
+        <th>@lang('admin/category.id')</th>
+        <th>@lang('admin/category.name')</th>
+        <th>@lang('admin/category.slug')</th>
+        <th>@lang('admin/category.actions')</th>
     </tr>
     </thead>
     <tbody>

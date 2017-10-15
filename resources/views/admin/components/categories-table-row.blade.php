@@ -16,8 +16,8 @@ $depth = isset($depth) ? $depth : 0;
         <td>{{ $category->name }}</td>
         <td>{{ $category->slug }}</td>
         <td>
-            <a href="#" class="btn btn-sm btn-default"><i class="fa fa-pencil"></i> Edit</a>
-            <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Delete</a>
+            <a href="#" class="btn btn-sm btn-default"><i class="fa fa-pencil"></i> @lang('admin/category.edit')</a>
+            <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> @lang('admin/category.delete')</a>
         </td>
     </tr>
     @if($category->children->count())
