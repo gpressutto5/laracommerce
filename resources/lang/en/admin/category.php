@@ -1,4 +1,5 @@
 <?php
+
 return [
     'title' => 'Categories list',
     'id' => 'ID',
