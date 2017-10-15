@@ -116,6 +116,7 @@ return [
             'text'        => 'menu.dashboard',
             'url'         => 'admin',
             'icon'        => 'dashboard',
+            'active'      => ['admin'],
         ],
 
         // SHOP SETTINGS
