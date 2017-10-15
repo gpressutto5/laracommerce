@@ -2,16 +2,23 @@
 $depth = isset($depth) ? $depth : 0;
 @endphp
 @foreach($categories as $category)
-    <tr>
+    <tr data-node="treetable-{{ $category->id }}"
+        @if($category->parent_id)
+            data-pnode="treetable-parent-{{ $category->parent_id }}"
+        @endif
+    >
         <td>
-            @for ($i = 0; $i < $depth; $i++)
+            @if ($depth)
                 <i class="fa fa-level-up parent-icon"></i>
-            @endfor
+            @endif
             {{ $category->id }}
         </td>
         <td>{{ $category->name }}</td>
         <td>{{ $category->slug }}</td>
-        <td><a href="#">Edit</a> <a href="#">Delete</a></td>
+        <td>
+            <a href="#" class="btn btn-sm btn-default"><i class="fa fa-pencil"></i> Edit</a>
+            <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Delete</a>
+        </td>
     </tr>
     @if($category->children->count())
         @include('admin.components.categories-table-row', [

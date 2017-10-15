@@ -13,7 +13,7 @@
                 <div class="box-header">
                     <h3 class="box-title">Test</h3>
                     <div class="box-tools">
-                        <a href="#" class="btn btn-sm btn-primary">Add new <i class="fa fa-plus-circle tool-icon"></i></a>
+                        <a href="#" class="btn btn-sm btn-success">Add new <i class="fa fa-plus-circle tool-icon"></i></a>
                     </div>
                 </div>
                 <div class="box-body table-responsive no-padding">
@@ -22,14 +22,4 @@
             </div>
         </div>
     </div>
-@stop
-
-
-@section('css')
-    @parent
-    <style>
-        /*.tool-icon {*/
-            /*font-size: 30px;*/
-        /*}*/
-    </style>
 @stop
