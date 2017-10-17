@@ -12,13 +12,13 @@
     </tbody>
 </table>
 
-@section('css')
+@push('css')
     <link rel="stylesheet" href="//www.jqueryscript.net/demo/jQuery-Plugin-To-Create-Collapsible-Bootstrap-Tables-Bootstrap-TreeFy/dist/css/bootstrap-treefy.css">
-@stop
+@endpush
 
-@section('js')
+@push('js')
     <script src="//www.jqueryscript.net/demo/jQuery-Plugin-To-Create-Collapsible-Bootstrap-Tables-Bootstrap-TreeFy/dist/bootstrap-treefy.js"></script>
     <script>
       $('#category-table').treeFy();
     </script>
-@stop
+@endpush

@@ -8,5 +8,10 @@ return [
     'actions' => 'Ações',
     'edit' => 'Editar',
     'delete' => 'Deletar',
+    'create' => 'Criar',
     'new' => 'Adicionar nova',
+    'parent' => 'Pai',
+    'no-parent' => 'Sem pai',
+    'root' => 'Categoria raíz',
+    'child' => 'Categoria filha',
 ];

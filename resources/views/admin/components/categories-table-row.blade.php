@@ -28,8 +28,7 @@ $depth = isset($depth) ? $depth : 0;
     @endif
 @endforeach
 
-@section('css')
-    @parent
+@push('css')
     <style>
         .parent-icon {
             -webkit-transform:rotateY(180deg);
@@ -45,4 +44,4 @@ $depth = isset($depth) ? $depth : 0;
             color: #bbbbbb;
         }
     </style>
-@endsection
+@endpush

@@ -8,5 +8,10 @@ return [
     'actions' => 'Actions',
     'edit' => 'Edit',
     'delete' => 'Delete',
+    'create' => 'Create',
     'new' => 'Add new',
+    'parent' => 'Parent',
+    'no-parent' => 'No parent',
+    'root' => 'Root category',
+    'child' => 'Child category',
 ];
