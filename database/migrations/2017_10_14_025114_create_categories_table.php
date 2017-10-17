@@ -20,6 +20,11 @@ class CreateCategoriesTable extends Migration
             $table->string('slug')->unique();
             NestedSet::columns($table);
             $table->timestamps();
+
+            $table->foreign('parent_id', 'ie_categories_parent_id_categories_id')
+                  ->references('id')
+                  ->on($table->getTable())
+                  ->onDelete('cascade');
         });
     }
 
