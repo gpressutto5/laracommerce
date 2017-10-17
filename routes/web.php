@@ -23,4 +23,5 @@ Route::prefix('admin')->namespace('Admin')->middleware('auth')->group(function (
     Route::get('/profile', 'ProfileController@index');
     Route::get('/categories', 'CategoryController@index');
     Route::post('/categories', 'CategoryController@store');
+    Route::patch('/categories/{category}', 'CategoryController@update');
 });

@@ -9,6 +9,8 @@ return [
     'edit' => 'Editar',
     'delete' => 'Deletar',
     'create' => 'Criar',
+    'save' => 'Salvar',
+    'cancel' => 'Cancelar',
     'new' => 'Adicionar nova',
     'parent' => 'Pai',
     'no-parent' => 'Sem pai',
