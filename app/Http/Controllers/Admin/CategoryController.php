@@ -48,8 +48,8 @@ class CategoryController extends Controller
     public function update(Request $request, Category $category)
     {
         $categoryData = $request->validate([
-            'name' => 'required|unique:categories,name,' . $category->id,
-            'slug' => 'required|alpha_dash|unique:categories,slug,' . $category->id,
+            'name' => 'required|unique:categories,name,'.$category->id,
+            'slug' => 'required|alpha_dash|unique:categories,slug,'.$category->id,
         ]);
 
         $category->update($categoryData);
