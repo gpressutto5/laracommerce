@@ -7,15 +7,6 @@
 @stop
 
 @section('content')
-    @if ($errors->any())
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif
     <div class="row">
         <div class="col-xs-12">
             <div class="box box-success">
@@ -61,7 +52,7 @@
                         </div>
 
                         <!-- Parent field -->
-                        <div class="form-group {{ $errors->has('parent') ? 'has-error' : '' }}">
+                        <div class="form-group {{ $errors->has('parent_id') ? 'has-error' : '' }}">
                             @include('admin.components.categories-select', ['categories' => $categories])
                         </div>
                     </div>

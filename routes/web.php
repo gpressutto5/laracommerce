@@ -22,4 +22,5 @@ Route::get('/admin', 'HomeController@index')->name('admin');
 Route::prefix('admin')->namespace('Admin')->middleware('auth')->group(function () {
     Route::get('/profile', 'ProfileController@index');
     Route::get('/categories', 'CategoryController@index');
+    Route::post('/categories', 'CategoryController@store');
 });

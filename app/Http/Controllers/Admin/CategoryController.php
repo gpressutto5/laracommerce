@@ -36,7 +36,15 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $categoryData = $request->validate([
+            'name' => 'required|unique:categories',
+            'slug' => 'required|unique:categories,slug|alpha_dash',
+            'parent_id' => 'nullable|exists:categories,id',
+        ]);
+
+        Category::create($categoryData);
+
+        return view('admin.category', ['categories' => Category::get()->toTree()]);
     }
 
     /**
