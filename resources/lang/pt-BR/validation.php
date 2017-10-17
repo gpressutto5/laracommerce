@@ -116,6 +116,9 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'name' => 'nome',
+        'parent_id' => 'pai',
+    ],
 
 ];
