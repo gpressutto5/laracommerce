@@ -85,6 +85,7 @@ class CategoryController extends Controller
         ]);
 
         $category->update($categoryData);
+        flash()->overlay(__('admin/category.updated', ['category' => $categoryData['name']]), __('admin/category.great'))->success()->important();
 
         return redirect('admin/categories');
     }
@@ -97,6 +98,9 @@ class CategoryController extends Controller
      */
     public function destroy(Category $category)
     {
-        //
+        $category->delete();
+        flash()->overlay(__('admin/category.deleted', ['category' => $category->name]), __('admin/category.great'))->success()->important();
+
+        return redirect('admin/categories');
     }
 }

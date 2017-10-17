@@ -26,7 +26,7 @@ $depth = isset($depth) ? $depth : 0;
                 <button id="save-{{ $category->id }}" style="display: none;" href="#" class="btn btn-sm btn-default should-hide" title="@lang('admin/category.save')"><i class="fa fa-floppy-o"></i></button>
                 <a id="cancel-{{ $category->id }}" style="display: none;" href="#" class="btn btn-sm btn-default should-hide" onclick="event.preventDefault();update_fields({{ $category->id }}, 'cancel');" title="@lang('admin/category.cancel')"><i class="fa fa-times"></i></a>
                 <a id="edit-{{ $category->id }}" href="#" class="btn btn-sm btn-default should-appear" onclick="event.preventDefault();update_fields({{ $category->id }}, 'edit');" title="@lang('admin/category.edit')"><i class="fa fa-pencil"></i></a>
-                <a id="delete-{{ $category->id }}" href="#" class="btn btn-sm btn-default should-appear" title="@lang('admin/category.delete')"><i class="fa fa-trash"></i></a>
+                <button id="delete-{{ $category->id }}" href="#" class="btn btn-sm btn-default should-appear" title="@lang('admin/category.delete')" onclick="delete_button('@lang('admin/category.confirm', ['category' => $category->name])')"><i class="fa fa-trash"></i></button>
             </td>
     </tr>
     </form>

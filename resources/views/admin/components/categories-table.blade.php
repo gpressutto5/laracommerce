@@ -93,5 +93,16 @@
           });
 
         };
+
+        var delete_button = function (message) {
+          if (!confirm(message)) {
+            event.preventDefault();
+            return false
+          }
+          tokens = document.getElementsByName('_method');
+          for (var i = 0; i < tokens.length; i++) {
+            tokens[i].value = 'DELETE';
+          }
+        };
     </script>
 @endpush

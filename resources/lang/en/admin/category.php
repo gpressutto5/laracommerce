@@ -17,5 +17,8 @@ return [
     'root' => 'Root category',
     'child' => 'Child category',
     'great' => 'Great!',
-    'created' => 'The category :Category was created!',
+    'created' => 'The category :category was created!',
+    'updated' => 'The category :category was updated!',
+    'deleted' => 'The category :category was deleted!',
+    'confirm' => 'Are you sure you want to delete the category :category and its children?',
 ];
