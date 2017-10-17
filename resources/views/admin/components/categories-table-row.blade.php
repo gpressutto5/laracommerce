@@ -11,13 +11,12 @@ $depth = isset($depth) ? $depth : 0;
             @if ($depth)
                 <i class="fa fa-level-up parent-icon"></i>
             @endif
-            {{ $category->id }}
+            {{ $category->name }}
         </td>
-        <td>{{ $category->name }}</td>
         <td>{{ $category->slug }}</td>
         <td>
-            <a href="#" class="btn btn-sm btn-default"><i class="fa fa-pencil"></i> @lang('admin/category.edit')</a>
-            <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> @lang('admin/category.delete')</a>
+            <a href="#" class="btn btn-sm btn-default" title="@lang('admin/category.edit')"><i class="fa fa-pencil"></i></a>
+            <a href="#" class="btn btn-sm btn-default" title="@lang('admin/category.delete')"><i class="fa fa-trash"></i></a>
         </td>
     </tr>
     @if($category->children->count())

@@ -1,7 +1,6 @@
-<table class="table table-hover" id="category-table">
+<table class="table table-hover table-striped" id="category-table">
     <thead>
     <tr data-level="header">
-        <th>@lang('admin/category.id')</th>
         <th>@lang('admin/category.name')</th>
         <th>@lang('admin/category.slug')</th>
         <th>@lang('admin/category.actions')</th>
