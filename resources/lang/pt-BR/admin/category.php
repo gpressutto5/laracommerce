@@ -14,4 +14,6 @@ return [
     'no-parent' => 'Sem pai',
     'root' => 'Categoria raíz',
     'child' => 'Categoria filha',
+    'great' => 'Maravilha!',
+    'created' => 'A categoria :Category foi criada!',
 ];

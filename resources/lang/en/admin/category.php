@@ -14,4 +14,6 @@ return [
     'no-parent' => 'No parent',
     'root' => 'Root category',
     'child' => 'Child category',
+    'great' => 'Great!',
+    'created' => 'The category :Category was created!',
 ];

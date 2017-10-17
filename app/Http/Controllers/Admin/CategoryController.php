@@ -43,6 +43,7 @@ class CategoryController extends Controller
         ]);
 
         Category::create($categoryData);
+        flash()->overlay(__('admin/category.created', ['category' => $categoryData['name']]), __('admin/category.great'))->success()->important();
 
         return view('admin.category', ['categories' => Category::get()->toTree()]);
     }
